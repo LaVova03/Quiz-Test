@@ -1,0 +1,121 @@
+.quiz_wrap {
+  position: relative;
+  width: 80%;
+  border: 7px solid rgb(0, 187, 187);
+  padding: 20px;
+  margin: 20px;
+  box-sizing: border-box;
+}
+
+.quiz_wrap::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  bottom: -7px;
+  left: -7px;
+  border: 7px solid rgb(0, 187, 187);
+  border-radius: 20px;
+  background-color: white;
+  z-index: -1;
+}
+
+.quiz_wrap > header {
+  display: flex;
+  border-bottom: 2px solid rgb(209, 209, 209);
+  font-size: 28px;
+  color: rgb(0, 187, 187);
+  font-weight: 700;
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
+
+main > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.quiz_answer_btn_red,
+.quiz_answer_btn_green,
+.quiz_answer_btn {
+  height: 50px;
+  border-radius: 7px;
+  background-color: rgb(201, 201, 201);
+  border: 0;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-align: left;
+  padding-left: 20px;
+  font-size: 16px;
+  transition: 200ms;
+}
+
+.quiz_answer_btn:hover {
+  background-color: rgb(223, 222, 222);
+}
+
+.quiz_answer_btn:focus {
+  background-color: rgb(223, 222, 222);
+}
+
+.quiz_answer_btn_red {
+  background-color: red;
+}
+
+.quiz_answer_btn_green {
+  background-color: green;
+}
+
+#quiz_next_btn {
+  width: max-content;
+  padding: 12px 30px;
+  text-align: center;
+  border-radius: 7px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 0;
+  color: white;
+  background-color: rgb(60, 150, 150);
+  transition: 200ms;
+}
+
+#quiz_next_btn:hover {
+  background-color: rgb(79, 190, 190);
+}
+
+.quiz_img_wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.quiz_exellend {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(201, 201, 201);
+  border-radius: 50%;
+  margin: 10px 5px;
+}
+
+.quiz_exellend_img {
+  width: 50px;
+  height: 50px;
+  background-image: url("../../assets/vvv.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50px;
+  border-radius: 40%;
+  margin: 10px 5px;
+}
+
+.quiz_img_wrap > div:first-child {
+  margin: 10px 5px 5px 0;
+}
+
+.quiz_exellend__img {
+  width: 50px;
+  height: 50px;
+  background-image: url("../../assets/vvv.png");
+  border-radius: 50%;
+  margin: 10px 5px;
+}
